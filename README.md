@@ -33,3 +33,13 @@ You're going to be building an amusement park. There will be users, attractions,
 
 
 <a href='https://learn.co/lessons/rails-amusement-park' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+
+
+
+
+get '/users/new', to: 'users#new'
+get '/users/:id', to: 'users#show', as: 'user'
+get '/users/:id/edit', to: 'users#edit', as: 'users_edit'
+get '/users', to: 'users#index'
+post '/users', to: 'users#create'

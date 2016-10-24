@@ -1,0 +1,23 @@
+<h2>New User</h2>
+
+<%= form_tag("/users") do %>
+  <%= label_tag "Name"  %><br>
+  <%= text_field_tag 'user[name]' %><br>
+
+  <%= label_tag "Height (in inches)"  %><br>
+  <%= number_field_tag 'user[height]' %><br>
+
+  <%= label_tag "How happy are you? (1-5 scale)"  %><br>
+  <%= number_field_tag 'user[happiness]' %><br>
+
+  <%= label_tag "How nauseous are you? (1-5 scale)"  %><br>
+  <%= number_field_tag 'user[nausea]' %><br>
+
+  <%= label_tag "How many dollars are in your pocket?"  %><br>
+  <%= number_field_tag 'user[tickets]' %><br>
+
+  <%= label_tag "Check box if you are a theme park owner" %>
+
+  <%= submit_tag "Sign up" %>
+
+<% end %>
